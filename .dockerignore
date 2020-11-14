@@ -1,0 +1,5 @@
+*
+!notebooks/
+!jupyter_notebook_config.py
+!Pipfile
+!Pipfile.lock
