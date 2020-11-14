@@ -9,4 +9,4 @@ jupyter = "~=1.0.0"
 [dev-packages]
 
 [requires]
-python_full_version = "3.9.0"
+python_version = "3.9"
