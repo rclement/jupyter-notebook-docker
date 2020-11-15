@@ -9,6 +9,12 @@ ENV APP_ROOT=/home/${APP_USER}
 RUN mkdir -p ${APP_ROOT}
 WORKDIR ${APP_ROOT}
 
+RUN set -ex && \
+    apt-get update && \
+    apt-get install --assume-yes --no-install-recommends \
+            build-essential \
+            python3-dev
+
 RUN set -ex && pip install --upgrade pip && pip install pipenv
 
 COPY Pipfile Pipfile
