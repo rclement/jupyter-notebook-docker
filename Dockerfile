@@ -1,4 +1,4 @@
-FROM python:3.8.6-slim
+FROM python:3.9.2-slim
 
 ENV HOST 0.0.0.0
 ENV PORT 5000
